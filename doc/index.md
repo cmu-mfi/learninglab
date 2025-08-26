@@ -1,7 +1,9 @@
 # Overview 
 
 Welcome to the MFI Learning Lab resource page! With a focus on electronics, mechanics, robotics, and embedded hardware, the program develops advanced manufacturing skills to support Industry 4.0 and beyond.
-Use the links below to find design files, source code, and supporting documentation for learning modules
+Use the links below to find design files, source code, and supporting documentation for learning modules.
+
+![im](./files/white-logo.png)
 
 
 ***

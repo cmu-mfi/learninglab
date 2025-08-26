@@ -1,7 +1,7 @@
 # IoT and Sensor Integration
 
-Internet of Things + MQTT, motor drive, and sensor learning board. Can be powered with a power drill battery for immediate remote deployment and sensor monitoring.
-Learning Goal: Quick start "how to" develop and build your own IIoT solution with scale and affordability in mind with off-the-shelf hardware and lightweight software.
+Internet of Things + MQTT sensor,input, actuator, motor drive learning board. Can be powered with a power drill battery for immediate remote deployment and sensor monitoring.
+Learning Goal: Quick start "how to" develop and build your own IIoT solution with scale and affordability in mind using off-the-shelf hardware and lightweight software.
 
 #Hardware Rev 1.0*: 
     Microcontroller: ESP32-WROOM-32

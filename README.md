@@ -12,7 +12,7 @@ Below are TLDR steps to build html pages locally.
 **Install Dependencies**
 ```
 git clone https://github.com/cmu-mfi/learninglab.git
-cd ./rtc
+cd ./learninglab
 python -m venv ./.venv
 
 # Linux/macOS Terminal

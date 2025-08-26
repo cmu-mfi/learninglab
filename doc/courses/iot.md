@@ -7,7 +7,7 @@ Learning Goal: Quick start "how to" develop and build your own IIoT solution (wi
 
 
 ## Hardware Summary
-![im](../files/3Drender_iot_playground_pcb.png)
+![im](../files/3Drender_iot_playground_pcb.PNG)
 
 
 

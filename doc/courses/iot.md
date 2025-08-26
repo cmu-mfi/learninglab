@@ -1,27 +1,47 @@
 # IoT and Sensor Integration
 
-Internet of Things + MQTT sensor,input, actuator, motor drive learning board. Can be powered with a power drill battery for immediate remote deployment and sensor monitoring.
-Learning Goal: Quick start "how to" develop and build your own IIoT solution with scale and affordability in mind using off-the-shelf hardware and lightweight software.
+Internet of Things + MQTT sensor, input, actuator, motor drive learning board. Can be powered with a power drill battery for immediate remote deployment and sensor monitoring.
 
-#Hardware Rev 1.0*: 
-    Microcontroller: ESP32-WROOM-32
-    Sensors: 
-        Temperature and Humidity (SHT45), 
-        Voltage, Current, Power (INA260),
-        Pushbutton(x4),
-        Rotary Enocder
-    Actuators:
-        Relay (10A, 277VAC, 30VDC),
-        DRV8871 (DC Motor Drive),
-        A4988 (Stepper Motor Drive)
-    Output: 
-        RGB LED(x4),
-        OLED (128x64 pixel)
-        Buzzer
+Learning Goal: Quick start "how to" develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.
 
-Schematic 
-KiCAD Design files:
 
+
+## Hardware Summary
+![im](../files/3Drender_iot_playground_pcb.png)
+
+
+
+| Category       | Components                                                                 |
+|----------------|----------------------------------------------------------------------------|
+| **Microcontroller** | ESP32-WROOM-32                                                           |
+| **Sensors/Input**         | - Temperature & Humidity (SHT45) <br> - Voltage, Current, Power (INA260) <br> - Pushbutton (x4) <br> - Rotary Encoder |
+| **Actuators**       | - Relay (10A, 277VAC, 30VDC) <br> - DRV8871 (DC Motor Drive) <br> - A4988 (Stepper Motor Drive) <br> - 4 CH Servo (PCA9685) |
+| **Output**          | - RGB LED (x4) <br> - OLED (128x64 pixel) <br> - Buzzer |
+
+Use the links below to navigate source documents:
+
+### 🔧 Hardware design files
+[Schematic.pdf](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/IoT%20PlayGND%20v1.1%20schematic.pdf)\
+[KiCAD design files](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND)
+
+
+### ⚡Firmware (example codes)
+
+1. [Blink](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/01_esp32_iot_plygnd_blink_gpio23.txt)
+2. [Relay + PushButton](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/02_esp32_iot_playgnd_relay_pushbutton.txt)
+3. [Buzer and PushButton](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/03_esp32_iot_playgnd_buzzer_pushbuttons.txt)
+4. [RGB LEDs](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/04_esp32_iot_playgnd_neopixel.txt)
+5. [RGB LEDs + Push Button](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/05_esp32_iot_playgnd_rgb_led_pushbuttons.txt)
+6. [Rotary Encoder](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/06_esp32_iot_playgnd_rotary_encoder_neopixels.txt)
+7. [DC Motor Drive](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/07_esp32_iot_playgnd_drv8871_dc_drive_pushbuttons.txt)
+8. [Stepper Motor Drive](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/08_esp32_iot_playgnd_a4988_stepper_driver_pushbuttons.txt)
+9. [Servo Multi Channel](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/09_esp32_iot_playgnd_pca9685_servo90.txt)
+10. [i2c Sniffer](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/10_esp32_iot_playgnd_i2c_sniffer.txt)
+11. [IR Remote Commands](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/11_esp32_iot_playgnd_ir_remote_oled.txt)
+12. [Temp and Humidity](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/12_esp32_iot_playgnd_sht45_temp_humidity.txt)
+13. [Voltage, Current Sense](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/13_esp32_iot_playgnd_ina260_vi_pwr_monitor.txt)
+14. [MQTT + Sensor Data](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/14_esp32_iot_playgnd_mqtt_oled.txt)
+15. [Bonus! Weather Forcast API + OLED](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/15_esp32_iot_playgnd_weather_forecast_api_oled.txt)
 
 ## Bill of Materials
 
@@ -59,7 +79,15 @@ KiCAD Design files:
 | U18, U19                                                                  | MP1584                  |   2 |                                 |              | [AliExpress Link](https://www.aliexpress.us/item/3256806890547813.html)                  |
 | U21                                                                       | ESP32                   |   1 |                                 |              | [Amazon Link](https://www.amazon.com/gp/product/B0D8Q8XFRK/) _(beware pinout)_            |
 
-*Hardware fix list:
-    1) The INA260 power sensor is upstream the reverse Polarity circuit. Will blow the INA260 but everything is fine.
-    2) The Stepper Sleep pin is not wired, so steppers with active code always consume power, no way to put them to sleep without bodge wire. 
-    3) Change ESP32 and footprint to digikey p/n (1965-ESP32-DEVKITC-32UE-ND) for posterity
+### Hardware Fix List (PCB rev 1.1 -future-)
+
+1. ~~The INA260 power sensor is upstream of the reverse polarity circuit(oops).~~  
+   - ~~A reverse polarity event will damage the INA260.~~
+   - ~~Need to moved INA260 circuit downstream of RPP.~~
+
+2. ~~The stepper "Sleep" pin is not wired.~~
+   - ~~Steppers with active code always consume power (holding torque).~~  
+   - ~~No way to put them to sleep without a bodge wire on the back of the PCB.~~ 
+
+3. Change ESP32 footprint to DigiKey p/n:  
+   - `1965-ESP32-DEVKITC-32UE-ND` (reliable source).  

@@ -16,7 +16,10 @@ author = 'Manufacturing Futures Institute'
 
 extensions = [
     'myst_parser',
+    'sphinx_copybutton'
 ]
+
+myst_enable_extensions = ["strikethrough"]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']

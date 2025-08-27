@@ -10,7 +10,11 @@ Deploy a temperature and humidity monitor for critical infrastructure (e.g., a s
 
 
 ## Hardware Summary
+<<<<<<< HEAD
 ![3d render of PCB](../files/3Drender_iot_playground_pcb.PNG)
+=======
+![im](../files/3Drender_iot_playground_pcb.PNG)
+>>>>>>> 9743a6758f753d5855c1917cc10a04d0d5961262
 
 
 

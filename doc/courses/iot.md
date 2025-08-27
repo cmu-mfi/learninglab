@@ -4,10 +4,13 @@ Internet of Things + MQTT sensor, input, actuator, motor drive learning board. C
 
 Learning Goal: Quick start "how to" develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.
 
+## What is possible? ##
+Deploy a temperature and humidity monitor for critical infrastructure (e.g., a server room). Send alerts or trigger actions if values fall outside the safe zone. In this example, the device was powered by a battery, which can also be monitored for scenarios where wired power is not available. A dashboard was built to display the data sent over MQTT.
+![server room monitoring](../files/server_room_temp_battery_24hr.png)
 
 
 ## Hardware Summary
-![im](../files/3Drender_iot_playground_pcb.png)
+![3d render of PCB](../files/3Drender_iot_playground_pcb.PNG)
 
 
 
@@ -20,12 +23,12 @@ Learning Goal: Quick start "how to" develop and build your own IIoT solution (wi
 
 Use the links below to navigate source documents:
 
-### 🔧 Hardware design files
+### 🔧 Hardware design files (circuit)
 [Schematic.pdf](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/IoT%20PlayGND%20v1.1%20schematic.pdf)\
 [KiCAD design files](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND)
 
 
-### ⚡Firmware (example codes)
+### 💻Firmware (example codes)
 
 1. [Blink](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/01_esp32_iot_plygnd_blink_gpio23.txt)
 2. [Relay + PushButton](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/02_esp32_iot_playgnd_relay_pushbutton.txt)
@@ -43,7 +46,7 @@ Use the links below to navigate source documents:
 14. [MQTT + Sensor Data](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/14_esp32_iot_playgnd_mqtt_oled.txt)
 15. [Bonus! Weather Forcast API + OLED](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/15_esp32_iot_playgnd_weather_forecast_api_oled.txt)
 
-## Bill of Materials
+### 📃 Bill of Materials (parts needed)
 
 | Reference                                                                 | Value                   | Qty | DigiKey P/N                     | Adafruit P/N | AliExpress / Amazon Link                                                                 |
 |---------------------------------------------------------------------------|-------------------------|----:|---------------------------------|--------------|------------------------------------------------------------------------------------------|
@@ -79,7 +82,7 @@ Use the links below to navigate source documents:
 | U18, U19                                                                  | MP1584                  |   2 |                                 |              | [AliExpress Link](https://www.aliexpress.us/item/3256806890547813.html)                  |
 | U21                                                                       | ESP32                   |   1 |                                 |              | [Amazon Link](https://www.amazon.com/gp/product/B0D8Q8XFRK/) _(beware pinout)_            |
 
-### Hardware Fix List (PCB rev 1.1 -future-)
+### ✅ Hardware Fix List (PCB rev 1.1 -future-)
 
 1. ~~The INA260 power sensor is upstream of the reverse polarity circuit(oops).~~  
    - ~~A reverse polarity event will damage the INA260.~~
@@ -87,7 +90,7 @@ Use the links below to navigate source documents:
 
 2. ~~The stepper "Sleep" pin is not wired.~~
    - ~~Steppers with active code always consume power (holding torque).~~  
-   - ~~No way to put them to sleep without a bodge wire on the back of the PCB.~~ 
+   - ~~No way to put them to sleep without a bodge wire on back of PCB.~~ 
 
 3. Change ESP32 footprint to DigiKey p/n:  
    - `1965-ESP32-DEVKITC-32UE-ND` (reliable source).  

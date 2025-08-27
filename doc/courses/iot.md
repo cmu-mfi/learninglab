@@ -1,8 +1,8 @@
 # IoT and Sensor Integration
 
-Internet of Things + MQTT sensor, input, actuator, motor drive learning board. Can be powered with a power drill battery for immediate remote deployment and sensor monitoring.
+IoT (Internet of Things) and Sensor Integration: Learn the fundamentals of Internet of Things (IoT) with this hardware focused course, designed for both beginners and tech enthusiasts. Learn to set up and program IoT devices like the ESP32 microcontroller using Arduino Integrated Development Environment (IDE), and explore key concepts like Input/ Outputs pins, sensors, and actuators. Dive into MQTT telemetry standard for reliable, light-weight device communication. Understand the importance of hardware choices, memory, and processing power for IoT projects. Gain practical experience while building real-world projects and skills to shape the future of connected technology for advanced manufacturing.
 
-Learning Goal: Quick start "how to" develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.
+**Learning Goal**: Quick start "how to" develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.
 
 ## What is possible? ##
 Deploy a temperature and humidity monitor for critical infrastructure (e.g., a server room). Send alerts or trigger actions if values fall outside the safe zone. In this example, the device was powered by a battery, which can also be monitored for scenarios where wired power is not available. A dashboard was built to display the data sent over MQTT.
@@ -10,12 +10,7 @@ Deploy a temperature and humidity monitor for critical infrastructure (e.g., a s
 
 
 ## Hardware Summary
-<<<<<<< HEAD
 ![3d render of PCB](../files/3Drender_iot_playground_pcb.PNG)
-=======
-![im](../files/3Drender_iot_playground_pcb.PNG)
->>>>>>> 9743a6758f753d5855c1917cc10a04d0d5961262
-
 
 
 | Category       | Components                                                                 |
@@ -25,7 +20,7 @@ Deploy a temperature and humidity monitor for critical infrastructure (e.g., a s
 | **Actuators**       | - Relay (10A, 277VAC, 30VDC) <br> - DRV8871 (DC Motor Drive) <br> - A4988 (Stepper Motor Drive) <br> - 4 CH Servo (PCA9685) |
 | **Output**          | - RGB LED (x4) <br> - OLED (128x64 pixel) <br> - Buzzer |
 
-Use the links below to navigate source documents:
+=============Use the links below to navigate source documents:===========================
 
 ### 🔧 Hardware design files (circuit)
 [Schematic.pdf](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/IoT%20PlayGND%20v1.1%20schematic.pdf)\
@@ -50,7 +45,8 @@ Use the links below to navigate source documents:
 14. [MQTT + Sensor Data](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/14_esp32_iot_playgnd_mqtt_oled.txt)
 15. [Bonus! Weather Forcast API + OLED](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/15_esp32_iot_playgnd_weather_forecast_api_oled.txt)
 
-### 📃 Bill of Materials (parts needed)
+
+### 🛒 Bill of Materials (parts needed)
 
 | Reference                                                                 | Value                   | Qty | DigiKey P/N                     | Adafruit P/N | AliExpress / Amazon Link                                                                 |
 |---------------------------------------------------------------------------|-------------------------|----:|---------------------------------|--------------|------------------------------------------------------------------------------------------|
@@ -98,3 +94,11 @@ Use the links below to navigate source documents:
 
 3. Change ESP32 footprint to DigiKey p/n:  
    - `1965-ESP32-DEVKITC-32UE-ND` (reliable source).  
+
+#### 📃Class Side Deck (pdf)
+[Lecture Slides](../files/iot_and_sensor_class_slides_aug2025.pdf)
+
+#### Useful resources
+MQTTX Client Toolbox <https://mqttx.app/> <br>
+Adafruit Broker <https://io.adafruit.com> <br>
+Mosquitto Broker <http://test.mosquitto.org> 

@@ -2,7 +2,7 @@
 
 IoT (Internet of Things) and Sensor Integration: Learn the fundamentals of Internet of Things (IoT) with this hardware focused course, designed for both beginners and tech enthusiasts. Learn to set up and program IoT devices like the ESP32 microcontroller using Arduino Integrated Development Environment (IDE), and explore key concepts like Input/ Outputs pins, sensors, and actuators. Dive into MQTT telemetry standard for reliable, light-weight device communication. Understand the importance of hardware choices, memory, and processing power for IoT projects. Gain practical experience while building real-world projects and skills to shape the future of connected technology for advanced manufacturing.
 
-**Learning Goal**: Quick start "how to" develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.
+**⭐Learning Goal**: Quick start "how to" develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.
 
 ## What is possible? ##
 Deploy a temperature and humidity monitor for critical infrastructure (e.g., a server room). Send alerts or trigger actions if values fall outside the safe zone. In this example, the device was powered by a battery, which can also be monitored for scenarios where wired power is not available. A dashboard was built to display the data sent over MQTT.

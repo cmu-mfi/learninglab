@@ -1,0 +1,480 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT and Sensor Integration &mdash; MFI Learning Lab  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=066d2f63" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  
+    <link rel="shortcut icon" href="../_static/white-logo.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PCB Design and Layout" href="pcb.html" />
+    <link rel="prev" title="4x4 Rover Project" href="robotics/rover.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MFI Learning Lab
+              <img src="../_static/white-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Courses</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="cad_for_3dp.html">Parametric CAD for 3D Printing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="electrical_assembly.html">Electrical Assembly and Soldering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fund_robotics.html">Fundamentals of Robotics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">IoT and Sensor Integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-possible">What is possible?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-summary">Hardware Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-design-files-circuit">🔧 Hardware design files (circuit)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#firmware-example-codes">💻Firmware (example codes)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bill-of-materials-parts-needed">🛒 Bill of Materials (parts needed)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-fix-list-pcb-rev-1-1-future">✅ Hardware Fix List (PCB rev 1.1 -future-)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#class-side-deck-pdf">📃Class Side Deck (pdf)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#useful-resources">Useful resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pcb.html">PCB Design and Layout</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MFI Learning Lab</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">IoT and Sensor Integration</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/cmu-mfi/learninglab/blob/master/doc/courses/iot.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="iot-and-sensor-integration">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">IoT and Sensor Integration</a><a class="headerlink" href="#iot-and-sensor-integration" title="Link to this heading"></a></h1>
+<p>IoT (Internet of Things) and Sensor Integration: Learn the fundamentals of Internet of Things (IoT) with this hardware focused course, designed for both beginners and tech enthusiasts. Learn to set up and program IoT devices like the ESP32 microcontroller using Arduino Integrated Development Environment (IDE), and explore key concepts like Input/ Outputs pins, sensors, and actuators. Dive into MQTT telemetry standard for reliable, light-weight device communication. Understand the importance of hardware choices, memory, and processing power for IoT projects. Gain practical experience while building real-world projects and skills to shape the future of connected technology for advanced manufacturing.</p>
+<p><strong>⭐Learning Goal</strong>: Quick start “how to” develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.</p>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#iot-and-sensor-integration" id="id1">IoT and Sensor Integration</a></p>
+<ul>
+<li><p><a class="reference internal" href="#what-is-possible" id="id2">What is possible?</a></p></li>
+<li><p><a class="reference internal" href="#hardware-summary" id="id3">Hardware Summary</a></p>
+<ul>
+<li><p><a class="reference internal" href="#hardware-design-files-circuit" id="id4">🔧 Hardware design files (circuit)</a></p></li>
+<li><p><a class="reference internal" href="#firmware-example-codes" id="id5">💻Firmware (example codes)</a></p></li>
+<li><p><a class="reference internal" href="#bill-of-materials-parts-needed" id="id6">🛒 Bill of Materials (parts needed)</a></p></li>
+<li><p><a class="reference internal" href="#hardware-fix-list-pcb-rev-1-1-future" id="id7">✅ Hardware Fix List (PCB rev 1.1 -future-)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#class-side-deck-pdf" id="id8">📃Class Side Deck (pdf)</a></p></li>
+<li><p><a class="reference internal" href="#useful-resources" id="id9">Useful resources</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="what-is-possible">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">What is possible?</a><a class="headerlink" href="#what-is-possible" title="Link to this heading"></a></h2>
+<p>Deploy a temperature and humidity monitor for critical infrastructure (e.g., a server room). Send alerts or trigger actions if values fall outside the safe zone. In this example, the device was powered by a battery, which can also be monitored for scenarios where wired power is not available. A dashboard was built to display the data sent over MQTT.
+<img alt="server room monitoring" src="../_images/server_room_temp_battery_24hr.png" /></p>
+</section>
+<section id="hardware-summary">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Hardware Summary</a><a class="headerlink" href="#hardware-summary" title="Link to this heading"></a></h2>
+<p><img alt="3d render of PCB" src="../_images/3Drender_iot_playground_pcb.PNG" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Category</p></th>
+<th class="head"><p>Components</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Microcontroller</strong></p></td>
+<td><p>ESP32-WROOM-32</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Sensors/Input</strong></p></td>
+<td><p>- Temperature &amp; Humidity (SHT45) <br> - Voltage, Current, Power (INA260) <br> - Pushbutton (x4) <br> - Rotary Encoder</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Actuators</strong></p></td>
+<td><p>- Relay (10A, 277VAC, 30VDC) <br> - DRV8871 (DC Motor Drive) <br> - A4988 (Stepper Motor Drive) <br> - 4 CH Servo (PCA9685)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Output</strong></p></td>
+<td><p>- RGB LED (x4) <br> - OLED (128x64 pixel) <br> - Buzzer</p></td>
+</tr>
+</tbody>
+</table>
+<p>=============Use the links below to navigate source documents:===========================</p>
+<section id="hardware-design-files-circuit">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">🔧 Hardware design files (circuit)</a><a class="headerlink" href="#hardware-design-files-circuit" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/IoT%20PlayGND%20v1.1%20schematic.pdf">Schematic.pdf</a><br />
+<a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND">KiCAD design files</a></p>
+</section>
+<section id="firmware-example-codes">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">💻Firmware (example codes)</a><a class="headerlink" href="#firmware-example-codes" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/01_esp32_iot_plygnd_blink_gpio23.txt">Blink</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/02_esp32_iot_playgnd_relay_pushbutton.txt">Relay + PushButton</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/03_esp32_iot_playgnd_buzzer_pushbuttons.txt">Buzer and PushButton</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/04_esp32_iot_playgnd_neopixel.txt">RGB LEDs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/05_esp32_iot_playgnd_rgb_led_pushbuttons.txt">RGB LEDs + Push Button</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/06_esp32_iot_playgnd_rotary_encoder_neopixels.txt">Rotary Encoder</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/07_esp32_iot_playgnd_drv8871_dc_drive_pushbuttons.txt">DC Motor Drive</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/08_esp32_iot_playgnd_a4988_stepper_driver_pushbuttons.txt">Stepper Motor Drive</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/09_esp32_iot_playgnd_pca9685_servo90.txt">Servo Multi Channel</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/10_esp32_iot_playgnd_i2c_sniffer.txt">i2c Sniffer</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/11_esp32_iot_playgnd_ir_remote_oled.txt">IR Remote Commands</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/12_esp32_iot_playgnd_sht45_temp_humidity.txt">Temp and Humidity</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/13_esp32_iot_playgnd_ina260_vi_pwr_monitor.txt">Voltage, Current Sense</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/14_esp32_iot_playgnd_mqtt_oled.txt">MQTT + Sensor Data</a></p></li>
+<li><p><a class="reference external" href="https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/15_esp32_iot_playgnd_weather_forecast_api_oled.txt">Bonus! Weather Forcast API + OLED</a></p></li>
+</ol>
+</section>
+<section id="bill-of-materials-parts-needed">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">🛒 Bill of Materials (parts needed)</a><a class="headerlink" href="#bill-of-materials-parts-needed" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Reference</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head text-right"><p>Qty</p></th>
+<th class="head"><p>DigiKey P/N</p></th>
+<th class="head"><p>Adafruit P/N</p></th>
+<th class="head"><p>AliExpress / Amazon Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>BZ1</p></td>
+<td><p>Buzzer_5V</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>445-2525-1-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>C3, C4, C7</p></td>
+<td><p>0.1uF 50V</p></td>
+<td class="text-right"><p>3</p></td>
+<td><p>1276-1068-1-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>C10, C11</p></td>
+<td><p>0.22uF 50V CER</p></td>
+<td class="text-right"><p>2</p></td>
+<td><p>445-2283-1-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>C12, C13, C14</p></td>
+<td><p>22uF 50V</p></td>
+<td class="text-right"><p>3</p></td>
+<td><p>399-11438-1-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>D2</p></td>
+<td><p>D</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>S5AC-FDICT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>D10</p></td>
+<td><p>LED</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>EALP05RDHRA2-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>D12</p></td>
+<td><p>SMF15A</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>SMF15A-E3-08CT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>D14</p></td>
+<td><p>1N4148W</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>4878-1N4148WCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>J3</p></td>
+<td><p>ServoPort_04</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>S1012EC-40-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>J5, J8</p></td>
+<td><p>Screw_Terminal_2_P3.50mm</p></td>
+<td class="text-right"><p>2</p></td>
+<td><p>732-2747-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>J7</p></td>
+<td><p>PINHD_2x3_Male</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>S1012EC-40-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>J15</p></td>
+<td><p>Screw_Terminal_3_P5.00mm</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>277-1578-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>K1</p></td>
+<td><p>G5Q-1</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>Z2929-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>Q1</p></td>
+<td><p>MOSFET P-CH 30V 25A TO252</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>785-1106-1-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Q2, Q3</p></td>
+<td><p>MMBT2222A</p></td>
+<td class="text-right"><p>2</p></td>
+<td><p>MMBT2222ATPMSCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>R1, R2, R8, R22, R25, R26, R27, R28, R30, R34, R35, R36, R37, R38</p></td>
+<td><p>10K</p></td>
+<td class="text-right"><p>14</p></td>
+<td><p>311-10.0KFRCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>R3, R4, R5, R6, R7, R9, R16, R23</p></td>
+<td><p>220</p></td>
+<td class="text-right"><p>8</p></td>
+<td><p>311-220FRCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>R17, R21, R31</p></td>
+<td><p>330</p></td>
+<td class="text-right"><p>3</p></td>
+<td><p>311-330FRCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>R18, R19, R20, R32</p></td>
+<td><p>1K</p></td>
+<td class="text-right"><p>4</p></td>
+<td><p>311-1.00KFRCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>R33</p></td>
+<td><p>100k</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>311-100KFRCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>S1</p></td>
+<td><p>SPDT Switch</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>EG5617-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>SW1, SW2, SW3, SW4</p></td>
+<td><p>Push_Button</p></td>
+<td class="text-right"><p>4</p></td>
+<td><p>2223-TS02-66-60-BK-160-LCR-D-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>SW6</p></td>
+<td><p>RotaryEncoder_Switch_MP</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>PEC11R-4220F-S0024-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>U3</p></td>
+<td><p>PCA9685PW</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>568-11925-1-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>U4</p></td>
+<td><p>SHT45</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p></p></td>
+<td><p>6174</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>U7</p></td>
+<td><p>A4988</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p></p></td>
+<td><p>6109</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>U8</p></td>
+<td><p>INA260</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p></p></td>
+<td><p>4226</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>U14</p></td>
+<td><p>MAX40200AUK</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>175-MAX40203AUK+TCT-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>U15</p></td>
+<td><p>L7805</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p>497-7255-1-ND</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>U18, U19</p></td>
+<td><p>MP1584</p></td>
+<td class="text-right"><p>2</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p><a class="reference external" href="https://www.aliexpress.us/item/3256806890547813.html">AliExpress Link</a></p></td>
+</tr>
+<tr class="row-even"><td><p>U21</p></td>
+<td><p>ESP32</p></td>
+<td class="text-right"><p>1</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p><a class="reference external" href="https://www.amazon.com/gp/product/B0D8Q8XFRK/">Amazon Link</a> <em>(beware pinout)</em></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hardware-fix-list-pcb-rev-1-1-future">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">✅ Hardware Fix List (PCB rev 1.1 -future-)</a><a class="headerlink" href="#hardware-fix-list-pcb-rev-1-1-future" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><s>The INA260 power sensor is upstream of the reverse polarity circuit(oops).</s></p>
+<ul class="simple">
+<li><p><s>A reverse polarity event will damage the INA260.</s></p></li>
+<li><p><s>Need to moved INA260 circuit downstream of RPP.</s></p></li>
+</ul>
+</li>
+<li><p><s>The stepper “Sleep” pin is not wired.</s></p>
+<ul class="simple">
+<li><p><s>Steppers with active code always consume power (holding torque).</s></p></li>
+<li><p><s>No way to put them to sleep without a bodge wire on back of PCB.</s></p></li>
+</ul>
+</li>
+<li><p>Change ESP32 footprint to DigiKey p/n:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">1965-ESP32-DEVKITC-32UE-ND</span></code> (reliable source).</p></li>
+</ul>
+</li>
+</ol>
+<section id="class-side-deck-pdf">
+<h4><a class="toc-backref" href="#id8" role="doc-backlink">📃Class Side Deck (pdf)</a><a class="headerlink" href="#class-side-deck-pdf" title="Link to this heading"></a></h4>
+<p><a class="reference download internal" download="" href="../_downloads/3adf0812b4a288dc8bf58d8e346c4197/iot_and_sensor_class_slides_aug2025.pdf"><span class="xref download myst">Lecture Slides</span></a></p>
+</section>
+<section id="useful-resources">
+<h4><a class="toc-backref" href="#id9" role="doc-backlink">Useful resources</a><a class="headerlink" href="#useful-resources" title="Link to this heading"></a></h4>
+<p>MQTTX Client Toolbox <a class="reference external" href="https://mqttx.app/">https://mqttx.app/</a> <br>
+Adafruit Broker <a class="reference external" href="https://io.adafruit.com">https://io.adafruit.com</a> <br>
+Mosquitto Broker <a class="reference external" href="http://test.mosquitto.org">http://test.mosquitto.org</a></p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="robotics/rover.html" class="btn btn-neutral float-left" title="4x4 Rover Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pcb.html" class="btn btn-neutral float-right" title="PCB Design and Layout" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CMU.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

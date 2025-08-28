@@ -4,6 +4,9 @@ IoT (Internet of Things) and Sensor Integration: Learn the fundamentals of Inter
 
 **⭐Learning Goal**: Quick start "how to" develop and build your own IIoT solution (with scale and affordability in mind) using off-the-shelf hardware and lightweight software.
 
+```{contents}
+```
+
 ## What is possible? ##
 Deploy a temperature and humidity monitor for critical infrastructure (e.g., a server room). Send alerts or trigger actions if values fall outside the safe zone. In this example, the device was powered by a battery, which can also be monitored for scenarios where wired power is not available. A dashboard was built to display the data sent over MQTT.
 ![server room monitoring](../files/server_room_temp_battery_24hr.png)

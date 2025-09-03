@@ -20,7 +20,7 @@ KiCAD <https://www.kicad.org/>
 4. [DRV8871 DC Motor Driver](https://github.com/retrobuiltRyan/DRV8871_motor_driver) <br>
 5. [neo7segment](https://github.com/retrobuiltRyan/Neo7Segment-Design-Files) <br>
 
-In class, we use the above examples at approximately 80% completion. The projects above are fully complete, but in class we these projects with 20% of the work unfinished to introduce core concepts in small doses. The scope of the layout expands with each project example. The linked examples represent fully completed projects and are not reflective of the work explicitly covered in class with the instructor.
+In class, we use the above examples at approximately 80% completion. The projects above are fully complete, but in class we use these projects with 20% of the work unfinished to introduce core concepts in small doses. The layout scope expands with each near-complete project. The linked examples represent fully completed projects and are not reflective of the work explicitly covered in class with the instructor.
 
 ### 📃 Useful docs
 [Lecture Slides](../files/pcb_design_and_layout_kicad_aug2025.pdf) <br>

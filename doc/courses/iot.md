@@ -23,7 +23,7 @@ Deploy a temperature and humidity monitor for critical infrastructure (e.g., a s
 | **Actuators**       | - Relay (10A, 277VAC, 30VDC) <br> - DRV8871 (DC Motor Drive) <br> - A4988 (Stepper Motor Drive) <br> - 4 CH Servo (PCA9685) |
 | **Output**          | - RGB LED (x4) <br> - OLED (128x64 pixel) <br> - Buzzer |
 
-=============Use the links below to navigate source documents:===========================
+=============Use the links below to navigate source documents:===================
 
 ### 🔧 Hardware design files (circuit)
 [Schematic.pdf](https://github.com/retrobuiltRyan/ESP32_IoT_PlayGND/blob/main/IoT%20PlayGND%20v1.1%20schematic.pdf)\

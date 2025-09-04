@@ -19,7 +19,7 @@ We will walk through step-by-step to draw these parts. By the end of the course 
 5. [motor mount rev1](../files/gear_motor_mount_25mm_rev1.pdf), [motor mount rev2](../files/gear_motor_mount_25mm_rev2.pdf)
 7. [switch mount](../files/switch_mount_bumper.pdf)
 8. [wheel](), [tire]()
-9. [rover assembly]()
+9. [rover assembly](../files/rover_assy.pdf)
 
 
 ## 🗳️CAD Models .3mf (3D print ready!) 

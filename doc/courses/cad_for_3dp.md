@@ -14,22 +14,22 @@ We will walk through step-by-step to draw these parts. By the end of the course 
 
 1. [chassis_rev1](../files/chassis_robo_rover_rev1.pdf), [chassis_rev2](../files/chassis_robo_rover_rev2.pdf)
 2. [shaft coupler](../files/motor_shaft_coupler_4mm.pdf)
-3. [25mm motor](../files/gear_motor_12v_25mm.pdf)
+3. [motor 25mm](../files/gear_motor_12_25mm_4mm_shaft.pdf)
 4. [rear bumper](../files/rear_bumper.pdf)
 5. [motor mount rev1](../files/gear_motor_mount_25mm_rev1.pdf), [motor mount rev2](../files/gear_motor_mount_25mm_rev2.pdf)
 7. [switch mount](../files/switch_mount_bumper.pdf)
-8. [wheel](), [tire]()
+8. [rim](../files/rim.pdf), [tire]()
 9. [rover assembly](../files/rover_assy.pdf)
 
 
-## 🗳️CAD Models .3mf (3D print ready!) 
+## 🗳️3D printableCAD Models (.3mf) 
 1. ~~[chassis_rev1]()~~, [chassis_rev2]()
 2. [shaft coupler]()
 3. [25mm motor]()
 4. [rear bumper]()
 5. ~~[motor mount rev1]()~~, [motor mount rev2]()
 6. [switch mount]()
-7. [wheel](), [tire]()
+7. [rim](), ~~[tire]()~~
 8. [rover assembly]()
 
 
@@ -37,3 +37,17 @@ We will walk through step-by-step to draw these parts. By the end of the course 
 OnShape <https://www.onshape.com/en/>
 
 ### 🔩 Hardware/Fasteners for Assembly (BoM)
+| Item | Assembly    | Description                                | Quantity | Cost   | Line Total | Vendor Link                                                                 |
+|------|-------------|--------------------------------------------|----------|--------|------------|-----------------------------------------------------------------------------|
+| 1    | Wheel       | Lego "Compatible" Tire 94x38 (or similar)  | 1        | $17.65 | $17.65     | [aliexpress](https://www.aliexpress.us/item/3256808684598937.html)          |
+| 2    | Drive       | Shaft Coupler, 4mm dia                     | 4        | $1.65  | $6.60      | [aliexpress](https://www.aliexpress.us/item/3256805863207590.html)          |
+| 3    | Drive       | Motor 12V, 82 RPM                          | 4        | $6.46  | $25.84     | [aliexpress](https://www.aliexpress.us/item/3256806026937992.html)          |
+| 4    | Chassis     | #6-32 x 0.5 in Round Head Screw            | 28       |        | $0.00      | mcmaster                                                                    |
+| 5    | Chassis     | #6-32 x 0.75 in Round Head Screw           | 20       |        | $0.00      | mcmaster                                                                    |
+| 6    | Chassis     | #6-32 Nut                                  | 40       |        | $0.00      | mcmaster                                                                    |
+| 7    | Chassis     | #6-32 x 1.0 in F/F Hex Standoff            | 4        |        | $0.00      | mcmaster                                                                    |
+| 8    | Wheel       | #4-40 x 0.5 in Round Head Screw            | 16       |        | $0.00      | mcmaster                                                                    |
+| 9    | Wheel       | #4-40 Nut                                  | 16       |        | $0.00      | mcmaster                                                                    |
+| 10   | Electronics | Switch, SPST                               | 1        | $0.71  | $0.71      | [digikey](https://www.digikey.com/en/products/detail/e-switch/RA11131121/2720267) |
+|------|-------------|--------------------------------------------|----------|--------|------------|-----------------------------------------------------------------------------|
+|      | **TOTAL**   |                                            |          |        | **$50.80** |                                                                             |

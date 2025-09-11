@@ -6,7 +6,7 @@ Turn your idea into a ready-to-manufacture Printed Circuit Board (PCB) prototype
 **⭐Learning Goal:** Quick start to design, layout, and order your own Printed Circuit Board with KiCAD.
 
 ## What is possible? 
- Start your prototypes on a PCB or put your wiring project directly on PCB! Skip the confusion bread-boarding and the mess of point-to-point wiring. Learn EDA concepts to layout a 2-layer printed circuit board. 
+ Start your prototypes on a PCB, or put your wiring project directly onto a PCB! Skip the confusion of breadboarding and the mess of point-to-point wiring. Learn EDA concepts to design and lay out a 2-layer printed circuit board.
 ![design examples](../files/pcb_design_projects.jpg)
 
 
@@ -28,3 +28,7 @@ In class, we use the above examples at approximately 80% completion. The project
 
 ### 🔗 Helpful links, expanded learning
 KiCAD learning <https://docs.kicad.org/>
+
+#### Electronics Suppliers (Parts!):
+Pro Suppliers: [Digikey](http://Digikey.com), [Mouser](http://mouser.com), [Arrow](http://Arrow.com), [Newark](http://Newark.com) , <br>
+Hobby Suppliers [Adafruit](http://Adafruit.com), [Sparkfun](http://Sparkfun.com), [Pololu](http://Pololu.com) <br> 

@@ -5,9 +5,10 @@ Students are welcome to bring their own laptops. All students will be required t
 
 **⭐Learning Goal**: Learn how to effectively design and model parts in 3D CAD to take full advantage of rapid prototyping with 3D printing.
 
-![4x4_skidsteer_rover](../files/barbie_rover_chassis_assy.png)
+![4x4_skidsteer_rover_real](../files/4x4_skidsteer_rover_real.JPG) 
+![4x4_skidsteer_rover](../files/barbie_rover_chassis_assy.png) <br>
 
-We will walk through step-by-step to draw these parts. By the end of the course you will have drawn all 3D models to 3D print your own 4x4 mobile robot platform. *Lots of assembly required; but that's the fun part!*
+Class will cover step-by-step instructions to draw these parts. By the end of the course you will have drawn all 3D models to 3D print your own 4x4 mobile robot platform. *Lots of assembly required; but that's the fun part!*
 
 ## ✏️Design Examples (Mechanical Drawings) 
 *(Use these drawings to create a 3D part!)*

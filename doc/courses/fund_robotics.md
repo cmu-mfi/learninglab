@@ -1,6 +1,6 @@
 # Fundamentals of Robotics
 
-This course is "in progress".
+This course is "in development".
 
 
 ## Projects

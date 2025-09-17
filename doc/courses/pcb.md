@@ -30,5 +30,5 @@ In class, we use the above examples at approximately 80% completion. The project
 KiCAD learning <https://docs.kicad.org/>
 
 #### Electronics Suppliers (Parts!):
-Pro Suppliers: [Digikey](http://Digikey.com), [Mouser](http://mouser.com), [Arrow](http://Arrow.com), [Newark](http://Newark.com) , <br>
+Pro Suppliers (Distributors): [Digikey](http://Digikey.com), [Mouser](http://mouser.com), [Arrow](http://Arrow.com), [Newark](http://Newark.com) , <br>
 Hobby Suppliers [Adafruit](http://Adafruit.com), [Sparkfun](http://Sparkfun.com), [Pololu](http://Pololu.com) <br> 

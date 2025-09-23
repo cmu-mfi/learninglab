@@ -1,7 +1,7 @@
 # Parametric CAD for 3D Printing
 Learn how to design 3D-printable parts! Master the fundamentals of 3D CAD by learning how to design and model custom parts for real-world applications. This course emphasizes practical techniques to effectively leverage rapid prototyping with 3D printing, enabling you to bring your ideas from concept to physical form quickly. By the end, you’ll have the skills to create precise, functional designs ready for fabrication. This is a dense, fast-paced course that requires prior computer literacy, including proficiency with mouse and keyboard operations, and a solid understanding of file and folder management within a Windows environment.
 
-Students are welcome to bring their own laptops. All students will be required to create a free account with onshape. **You will need access to your email account to verify creating a new account.** Onshape is a cloud-based 3D CAD (Computer-Aided Design) platform used for product design, engineering, and collaboration. It is complete browser based. Onshape is similar to SolidWorks in it's workflow. 
+Students are welcome to bring their own laptops. All students will be required to create a free account with onshape.  **You will need access to your email account to verify creating a new account.** It is strongly recommended participants create a [free account](https://www.onshape.com/en/products/free) before attending class. Onshape is a cloud-based 3D CAD (Computer-Aided Design) platform used for product design, engineering, and collaboration. It is complete browser based. Onshape is similar to SolidWorks in it's workflow. 
 
 **⭐Learning Goal**: Learn how to effectively design and model parts in 3D CAD to take full advantage of rapid prototyping with 3D printing.
 

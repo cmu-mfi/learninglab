@@ -17,3 +17,13 @@ courses/fund_robotics.md
 courses/iot.md
 courses/pcb.md
 ```
+
+***
+## 🏫 Register for a Class!
+
+<div style="border:1px solid #ccc; padding:6px; display:inline-block;">
+  <a href="https://landing.catalystconnection.org/skillmill19-learning-lab">SkillMill19 Learning Lab</a>
+</div>
+<br>
+
+Questions? [Contact](mailto:rbates@andrew.cmu.edu)

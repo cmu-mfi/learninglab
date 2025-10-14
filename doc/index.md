@@ -1,8 +1,7 @@
 # Overview 
 
-Welcome to the MFI Learning Lab resource page! With a focus on electronics, mechanics, robotics, and embedded hardware, the program develops advanced manufacturing skills to support Industry 4.0 and beyond.
-Use the links below to find design files, source code, and supporting documentation for learning modules
-
+Welcome to the MFI Learning Lab resource page! With a focus on electronics, mechanics, robotics, and embedded hardware, our program develops advanced manufacturing skills to support Industry 4.0 and beyond.
+Use the links below to find design files, source code, and supporting documentation for learning modules.
 
 ***
 
@@ -18,3 +17,13 @@ courses/fund_robotics.md
 courses/iot.md
 courses/pcb.md
 ```
+
+***
+## 🏫 Register for a Class!
+
+<div style="border:1px solid #ccc; padding:6px; display:inline-block;">
+  <a href="https://landing.catalystconnection.org/skillmill19-learning-lab">SkillMill19 Learning Lab</a>
+</div>
+<br>
+
+Questions? [Contact](mailto:rbates@andrew.cmu.edu)

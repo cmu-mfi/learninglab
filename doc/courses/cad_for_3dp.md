@@ -1,5 +1,5 @@
 # Parametric CAD for 3D Printing
-Learn how to design 3D-printable parts! Master the fundamentals of 3D CAD by learning how to design and model custom parts for real-world applications. This course emphasizes practical techniques to effectively leverage rapid prototyping with 3D printing, enabling you to bring your ideas from concept to physical form quickly. By the end, you’ll have the skills to create precise, functional designs ready for fabrication. This is a dense, fast-paced course that requires prior computer literacy, including proficiency with mouse and keyboard operations, and a solid understanding of file and folder management within a Windows environment.
+Learn how to design 3D-printable parts! Understand the fundamentals of 3D CAD by learning how to design and model custom parts for real-world applications. This course emphasizes practical techniques to effectively leverage rapid prototyping with 3D printing, enabling you to bring your ideas from concept to physical form quickly. By the end, you’ll have the skills to create precise, functional designs ready for fabrication. This is a dense, fast-paced course that requires prior computer literacy, including proficiency with mouse and keyboard operations, and a solid understanding of file and folder management within a Windows environment.
 
 Students are welcome to bring their own laptops. All students will be required to create a free account with onshape.  **You will need access to your email account to verify creating a new account.** It is strongly recommended participants create a [free account](https://www.onshape.com/en/products/free) before attending class. Onshape is a cloud-based 3D CAD (Computer-Aided Design) platform used for product design, engineering, and collaboration. It is complete browser based. Onshape is similar to SolidWorks in it's workflow. 
 
@@ -8,7 +8,7 @@ Students are welcome to bring their own laptops. All students will be required t
 ![4x4_skidsteer_rover_real](../files/4x4_skidsteer_rover_real.JPG) 
 ![4x4_skidsteer_rover](../files/barbie_rover_chassis_assy.png) <br>
 
-Class will cover step-by-step instructions to draw these parts. By the end of the course you will have drawn all 3D models to 3D print your own 4x4 mobile robot platform. *Lots of assembly required; but that's the fun part!*
+Class will cover step-by-step instructions to draw these parts. By the end of the course you will have drawn all 3D models to 3D print your own 1:10 scale 4x4 mobile robot platform. *Lots of assembly required; but that's the fun part!*
 
 ## ✏️Design Examples (Mechanical Drawings) 
 *(Use these drawings to create a 3D part!)*

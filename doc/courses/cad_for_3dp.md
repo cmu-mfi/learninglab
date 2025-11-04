@@ -16,10 +16,10 @@ Class will cover step-by-step instructions to draw these parts. By the end of th
 1. [chassis_rev1](../files/chassis_robo_rover_rev1.pdf), [chassis_rev2](../files/chassis_robo_rover_rev2.pdf)
 2. [shaft coupler](../files/motor_shaft_coupler_4mm.pdf)
 3. [motor 25mm](../files/gear_motor_12_25mm_4mm_shaft.pdf)
-4. [rear bumper](../files/rear_bumper.pdf)
+4. [rear bumper](../files/rear_bumper_nov4.pdf)
 5. [motor mount rev1](../files/gear_motor_mount_25mm_rev1.pdf), [motor mount rev2](../files/gear_motor_mount_25mm_rev2.pdf)
 7. [switch mount](../files/switch_mount_bumper.pdf)
-8. [rim](../files/rim.pdf), [tire](../files/tire_94x38.pdf)
+8. [rim](../files/rim_nov_4_fixed.pdf), [tire](../files/tire_94x38.pdf)
 9. [rover assembly](../files/rover_assy.pdf)
 
 
@@ -30,14 +30,14 @@ Class will cover step-by-step instructions to draw these parts. By the end of th
 4. [rear bumper](../files/bumper_rear.3mf)
 5. ~~[motor mount rev1]()~~, [motor mount rev2](../files/gear_motor_mount_25mm_rev2.3mf)
 6. [front bumper](../files/bumper_front_switch_mount.3mf)
-7. [rim](../files/wheel_rim.3mf), ~~[tire]()~~
-8. [rover assembly]() .pending. *onshape export seems broken for assemblies?*
+7. [rim](../files/wheel_rim.3mf), [tire](../files/tire_94x38.3mf)
+8. [rover assembly](../files/rover_assy.3mf) .pending. *onshape export seems broken for assemblies?*
 
 
 ### 💻 Software 
 OnShape <https://www.onshape.com/en/>
 
-### 🔩 Hardware/Fasteners for Assembly (BoM)
+### 🔩 Mechanical Hardware/Fasteners for Assembly (BoM)
 | Item | Assembly     | Description                                | Qty | Cost   | Line Total | Vendor Link / McMaster Part#         |
 |------|--------------|--------------------------------------------|-----|--------|------------|--------------------------------------------------------------------------------------|
 | 1    | Wheel        | Lego "Compatible" Tire 94x38 (or similar)  | 1   | $17.65 | $17.65     | [Link](https://www.aliexpress.us/item/3256808684598937.html)                         |
@@ -57,5 +57,4 @@ OnShape <https://www.onshape.com/en/>
 
 
 ### 🪫 Electronics (Control and Drive PCB)
-*Links coming soon* <br>
-~~Schematic + PCB (KiCAD design files)~~
+4x4_Rover_ESP32  <https://github.com/retrobuiltRyan/4x4_Rover_ESP32>

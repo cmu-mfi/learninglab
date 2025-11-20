@@ -31,7 +31,7 @@ Class will cover step-by-step instructions to draw these parts. By the end of th
 5. ~~[motor mount rev1]()~~, [motor mount rev2](../files/gear_motor_mount_25mm_rev2.3mf)
 6. [front bumper](../files/bumper_front_switch_mount.3mf)
 7. [rim](../files/wheel_rim.3mf), [tire](../files/tire_94x38.3mf)
-8. [rover assembly](../files/rover_assy.3mf) .pending. *onshape export seems broken for assemblies?*
+8. [rover assembly](../files/rover_assy.3mf)  *not for printing unless you know some tricks*
 
 
 ### 💻 Software 

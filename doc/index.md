@@ -18,6 +18,13 @@ courses/iot.md
 courses/pcb.md
 ```
 
+```{toctree}
+:caption: Resources
+:maxdepth: 1
+
+resources/plcnext.md
+```
+
 ***
 ## 🏫 Register for a Class!
 

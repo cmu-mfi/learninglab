@@ -7,14 +7,13 @@ The 4x4 Rover Project is a skid-steer rover platform built primarily from 3D-pri
 
 ## Resources
 
-[H_bridge_motor_worksheet](../files/skid_steer_motor_planning.pdf)<br>
+
 The 4x4 rover platform reference CAD files are located [here](https://cmu-mfi.github.io/learninglab/courses/cad_for_3dp.html). <br>
-![Forklift_CAD_and_real_pic.png](../files/barbie_rover_chassis_assy.png)
+![Forklift_CAD_and_real_pic.png](../files/barbie_rover_chassis_assy.png)<br>
+[H_bridge_motor_worksheet](../files/skid_steer_motor_planning.pdf)<br>
 
 📐CAD Files for the complete project are located [here](https://cad.onshape.com/documents/4f9534eae9bdb33bcf172fe9/w/a4954ea2d6d5d21b33e1d9c4/e/6819e643c891bac21c58d472?renderMode=0&uiState=6966942a584957a77f6699f9). You can export or make a copy and edit with a free onshape account.<br>
 🔋PCB design files are located [here](https://github.com/retrobuiltRyan/4x4_Rover_ESP32/).<br>
 
 To expand the rover platform object beyond a 4x4 rover, a forklift mechanism was designed. 
 ![Forklift_4x4_rover.gif](../files/forklift.gif) 
-
-![3d render of PCB](../files/3Drender_iot_playground_pcb.PNG)

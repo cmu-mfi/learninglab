@@ -16,7 +16,7 @@ courses/electrical_assembly.md
 courses/fund_robotics.md
 courses/iot.md
 courses/pcb.md
-courses/electrical_technician_basics.md
+courses/electrical_technicians_basics.md
 ```
 
 ```{toctree}

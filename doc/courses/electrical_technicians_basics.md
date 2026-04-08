@@ -1,0 +1,3 @@
+# Electrical Technicians Basics
+
+A great course incoming for all the electrical technicians out there. This course will cover the basics of electrical engineering, including circuit analysis, power systems, and safety protocols. Whether you're a beginner or looking to refresh your knowledge, this course is designed to provide you with the essential skills needed in the field of electrical technology. Stay tuned for more updates and course materials!

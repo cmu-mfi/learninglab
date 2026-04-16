@@ -20,4 +20,6 @@ Hand & Power Tools Basics provides a foundational understanding of tools used fo
 
 ### 📃 Useful docs
 [Dolley Drawing](../files/moving_dolley_dimensioned.pdf) <br>
-![moving dolley](../files/moving_dolley.jpg)
+![moving dolley](../files/moving_dolley.jpg)<br>
+affordable caster wheel option: [#1](https://www.harborfreight.com/3-inch-x-7-8-eighth-inch-rubber-swivel-caster-66360.html) [#2](https://www.parts-express.com/3-Swivel-Caster-Wheel-with-Metal-Plate-Mount-269-681)
+

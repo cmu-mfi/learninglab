@@ -14,7 +14,7 @@ essential terminology, basic electrical theory, and proper use of tools for meas
 - Various electrical hand tools
 
 ### 📃 Useful docs
-[Lecture Slides](//files/electrical_tech_slide_deck_rbates_april_2026.pdf) <br>
-[Hands-on: Residential Circuit Diagram Examples](//files/residential_circuit_diagram_hands_on_examples.pdf) 
+[Lecture Slides](/files/electrical_tech_slide_deck_rbates_april_2026.pdf) <br>
+[Hands-on: Residential Circuit Diagram Examples](/files/residential_circuit_diagram_hands_on_examples.pdf) 
 
 ![2x4 stud wall](../files/2x4_wall_for_electrical_wiring.jpg)<br>

@@ -21,7 +21,7 @@ source .venv/bin/activate
 # Windows CMD
 call .venv\Scripts\activate.bat
 
-pip install -U sphinx sphinx_rtd_theme myst_parser sphinx_copybutton
+pip install -U sphinx sphinx_rtd_theme myst_parser sphinx_copybutton sphinx_design
 ```
 
 **Build doc**

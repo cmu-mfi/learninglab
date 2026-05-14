@@ -18,7 +18,8 @@ copyright = '{}, {}'.format(time.strftime('%Y'), author)
 
 extensions = [
     'myst_parser',
-    'sphinx_copybutton'
+    'sphinx_copybutton',
+    'sphinx_design'
 ]
 
 myst_enable_extensions = ["strikethrough"]

@@ -1,4 +1,11 @@
-# Overview 
+```{button-link} https://cmu-mfi.github.io/
+:color: primary
+:shadow:
+cmu-mfi.github.io
+```
+<!-- ref: https://sphinx-design.readthedocs.io/en/latest/badges_buttons.html -->
+
+# Overview
 
 Welcome to the MFI Learning Lab resource page! With a focus on electronics, mechanics, robotics, and embedded hardware, our program develops advanced manufacturing skills to support Industry 4.0 and beyond.
 Use the links below to find design files, source code, and supporting documentation for learning modules.

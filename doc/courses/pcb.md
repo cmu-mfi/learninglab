@@ -14,7 +14,7 @@ Turn your idea into a ready-to-manufacture Printed Circuit Board (PCB) prototype
 KiCAD <https://www.kicad.org/>
 
 ### 📐Practice Examples (Project Links)
-1. [RJ-45 breakout](link coming soon) <br>
+1. [RJ-45 breakout](https://github.com/retrobuiltRyan/RJ-45-breakout) <br>
 2. [RGB LED Matrix](https://github.com/retrobuiltRyan/5x5_RGBLED-Matrix) <br>
 3. [555_Blink_a_tron](https://github.com/retrobuiltRyan/555_Blink-a-Tron) <br>
 4. [DRV8871 DC Motor Driver](https://github.com/retrobuiltRyan/DRV8871_motor_driver) <br>

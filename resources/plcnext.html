@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLCNext Tutorials and Code &mdash; MFI Learning Lab  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=066d2f63" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+  
+    <link rel="shortcut icon" href="../_static/white-logo.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Hand and Power Tools Basics" href="../courses/hand_power_tools_basics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MFI Learning Lab
+              <img src="../_static/white-logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Courses</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../courses/cad_for_3dp.html">Parametric CAD for 3D Printing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../courses/electrical_assembly.html">Electrical Assembly and Soldering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../courses/fund_robotics.html">Fundamentals of Robotics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../courses/iot.html">IoT and Sensor Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../courses/pcb.html">PCB Design and Layout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../courses/electrical_technician_basics.html">Electrical Technician Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../courses/hand_power_tools_basics.html">Hand and Power Tools Basics</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PLCNext Tutorials and Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-ressources">General Ressources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specific-links">Specific Links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tutorials">Tutorials</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-setup-on-linux">Installation &amp; Setup on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plcnext-technology-toolchain-plcncli">PLCNext Technology Toolchain (plcncli)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plcnext-sdk-for-axc-f-2125">PLCNext SDK (for AXC F 2125)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect-axc-f-2125-on-linux">Connect AXC F 2125 on Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-setup-on-windows">Installation &amp; Setup on Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-plcnext-engineer">Install PLCNext Engineer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-plcncli">Install plcncli</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-sdk-for-axc-f-2152">Install sdk for AXC F 2152</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-and-setup-eclipse-when-working-on-cpp-projects">Install and setup Eclipse (when working on cpp projects)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect-axc-f-2125-on-windows">Connect AXC F 2125 on Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MFI Learning Lab</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PLCNext Tutorials and Code</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/cmu-mfi/learninglab/blob/master/doc/resources/plcnext.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="plcnext-tutorials-and-code">
+<h1>PLCNext Tutorials and Code<a class="headerlink" href="#plcnext-tutorials-and-code" title="Link to this heading"></a></h1>
+<p><a href="https://github.com/cmu-mfi/plcnext_tutorials/" class="inline-button"><i class="fab fa-github"></i>plcnext_tutorials</a></p>
+<p>Documentation and Code for PLCNext</p>
+<p>Versions used in this repository:</p>
+<ul class="simple">
+<li><p>AXC F 2152 Controller running firmware 25.0.3</p></li>
+<li><p>PLCNext Engineer 2025.9</p></li>
+<li><p>sdk version 2025.0</p></li>
+</ul>
+<blockquote>
+<div><p>Credits: Alexander Minor, Fall Internship 2025</p>
+</div></blockquote>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>##</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/SimpleIOReadWrite/README.md">01</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/SimpleIOReadWrite/README.md">SimpleIOReadWrite</a></p></td>
+<td><p>Control the IO of the controller in a real-time cpp program</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/NoEngineerHelloWorld/README.md">02</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/NoEngineerHelloWorld/README.md">NoEngineerHelloWorld</a></p></td>
+<td><p>Create a cpp real-time program that uses logging and deploy it to the controller withouth using PLCNext Engineer</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/RestCommunication/README.md">03</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/RestCommunication/README.md">RestCommunication</a></p></td>
+<td><p>Uses a cpp real-time program to read and write IO from the controller and also makes it available to the rest interface, through which it also receives commands to set the output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/MqttCommunication/README.md">04</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/MqttCommunication/README.md">MqttCommunication</a></p></td>
+<td><p>Read the IO from the PLCNext starter kit, sends it over MQTT to a broker using the IIot Library by PlcNext.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/GrpcRemoteCommunication/README.md">05</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/GrpcRemoteCommunication/README.md">GrpcRemoteCommunication</a></p></td>
+<td><p>How to read and write controller data remotely using grpc. An example using the command-line tool grpcurl and python is provided.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/GrpcLocalCommunication/README.md">06</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/GrpcLocalCommunication/README.md">GrpcLocalCommunication</a></p></td>
+<td><p>How to read and write controller data localy using grpc running on python on the controller itself. Employs a podman container to use python.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/OpcUaCommunication/README.md">07</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/OpcUaCommunication/README.md">OpcUaCommunication</a></p></td>
+<td><p>Read controller data remotely by connecting to the OPC UA server of the controller. An example using the program UaExpert is provided.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/ToasterOven/README.md">08</a></p></td>
+<td><p><a class="reference external" href="https://github.com/cmu-mfi/plcnext_tutorials/tree/main/OpcUaCommunication/README.md">ToasterOven</a></p></td>
+<td><p>An extensive example project utilizing ladder logic, cpp real-time programs, the rest interface, and remote grpc.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="general-ressources">
+<h2>General Ressources<a class="headerlink" href="#general-ressources" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.plcnext-community.net/infocenter/about/home/">PLCNext Info Center</a></p></li>
+<li><p><a class="reference external" href="https://www.plcnext-runtime.com/ch00-00-introduction.html">CPP Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://github.com/PLCnext/CppExamples">CPP Examples</a></p></li>
+<li><p><a class="reference external" href="https://github.com/savushkin-r-d/PLCnext-howto/tree/master">PLCNext How-To</a></p></li>
+<li><p><a class="reference external" href="https://engineer.plcnext.help/2025.0_en/_index.htm?iframe=https://engineer.plcnext.help/2025.0_de/LoggingMonitoring.htm">PLCNext Engineer Help</a></p></li>
+</ul>
+<section id="specific-links">
+<h3>Specific Links<a class="headerlink" href="#specific-links" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.plcnext-community.net/infocenter/programming/cplusplus/icomponent_and_iprogram/">CPP Component Structure and Port Definitions</a></p></li>
+<li><p><a class="reference external" href="https://www.plcnext-community.net/infocenter/programming/supported_elementary_data_types/">CPP Data Types</a></p></li>
+<li><p><a class="reference external" href="https://www.plcnext-community.net/robohelp/infocenter/assets/docs/um_en_axl_f_sys_diag_8663_en_08.pdf">Axioline User Diagnostics and Error Codes</a></p></li>
+<li><p><a class="reference external" href="https://www.rs-online.com/designspark/a-practical-introduction-to-plcnext-part-1-the-ecosystem">PLCNex Ecosystem</a></p></li>
+</ul>
+</section>
+<section id="tutorials">
+<h3>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.realpars.com/blog/plcnext-engineer">Connect to Controller in Windows</a></p></li>
+<li><p><a class="reference external" href="https://www.realpars.com/blog/phoenix-contact-plcnext">Setting up PLCNext Engineer Project</a></p>
+<ul>
+<li><p>Not entirely correct, when setting up Axioline Device, the 3rd slot should be: <strong>AXL SE SC Rev. &gt;=00</strong> not <strong>AXL SE SC-A Rev. &gt;=00</strong></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://www.realpars.com/blog/plcnext-ladder-logic">Ladder Logic IO Control</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=IUGSZzuzm-c">How to import cpp program into PLC Engineer</a></p></li>
+</ul>
+</section>
+</section>
+<section id="installation-setup-on-linux">
+<h2>Installation &amp; Setup on Linux<a class="headerlink" href="#installation-setup-on-linux" title="Link to this heading"></a></h2>
+<p>How to install all dependencies and tools necessary to work with plcnext. All the steps are valid for ubuntu linux.</p>
+<section id="plcnext-technology-toolchain-plcncli">
+<h3>PLCNext Technology Toolchain (plcncli)<a class="headerlink" href="#plcnext-technology-toolchain-plcncli" title="Link to this heading"></a></h3>
+<p>Download the right version from <a class="reference external" href="https://www.phoenixcontact.com/en-us/products/software-package-plcnext-technology-toolchain-1639782">here</a></p>
+<p>Run the executable:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>/bin/sh<span class="w"> </span>PLCnext_Toolchain_2024.6.sh
+</pre></div>
+</div>
+<p>Press q and then y to accept the license.</p>
+<p>Move the folder to /opt and link the file:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>ln<span class="w"> </span>-sf<span class="w"> </span>/opt/PLCnext_Toolchain/plcncli<span class="w"> </span>/usr/bin/plcncli
+</pre></div>
+</div>
+<p>Test if plcncli is accessible:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>plcncli<span class="w"> </span>--version
+</pre></div>
+</div>
+</section>
+<section id="plcnext-sdk-for-axc-f-2125">
+<h3>PLCNext SDK (for AXC F 2125)<a class="headerlink" href="#plcnext-sdk-for-axc-f-2125" title="Link to this heading"></a></h3>
+<p>Download axcf2152 2025.0.3 sdk from <a class="reference external" href="https://www.phoenixcontact.com/en-us/products/controller-axc-f-2152-2404267">here</a> (Pick the right version and operating system under Software)</p>
+<p>Navigate to where the download got saved and run:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>a+x<span class="w"> </span>axcf2152-linux_sdk-2025.0.3-25.0.3.99.sh
+sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>
+sudo<span class="w"> </span>mkdir<span class="w"> </span>/opt/pxc/2025.0<span class="w"> </span>-p
+sudo<span class="w"> </span>chown<span class="w"> </span><span class="nv">$USER</span>:<span class="nv">$USER</span><span class="w"> </span>/opt/pxc/<span class="w"> </span>-R
+</pre></div>
+</div>
+<p>Install the sdk with plcncli:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>plcncli<span class="w"> </span>install<span class="w"> </span>sdk<span class="w"> </span>--path<span class="w"> </span>axcf2152-linux_sdk-2025.0.3-25.0.3.99.sh<span class="w"> </span>-d<span class="w"> </span>/opt/pxc/2025.0
+</pre></div>
+</div>
+</section>
+<section id="connect-axc-f-2125-on-linux">
+<h3>Connect AXC F 2125 on Linux<a class="headerlink" href="#connect-axc-f-2125-on-linux" title="Link to this heading"></a></h3>
+<p>When plugging the controller directly into the computer via ethernet while using Wifi for internet:</p>
+<p>Find Device Name of Ethernet:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>nmcli<span class="w"> </span>device
+</pre></div>
+</div>
+<p>Create connection:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>nmcli<span class="w"> </span>con<span class="w"> </span>add<span class="w"> </span>con-name<span class="w"> </span><span class="s2">&quot;plc-con&quot;</span><span class="w"> </span>ifname<span class="w"> </span>&lt;device<span class="w"> </span>name&gt;<span class="w"> </span><span class="nb">type</span><span class="w"> </span>ethernet
+</pre></div>
+</div>
+<p>Configure connection:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>nmcli<span class="w"> </span>con<span class="w"> </span>modify<span class="w"> </span>plc-con<span class="w"> </span>ipv6.method<span class="w"> </span>disabled
+nmcli<span class="w"> </span>con<span class="w"> </span>modify<span class="w"> </span>plc-con<span class="w"> </span>ipv4.method<span class="w"> </span>shared<span class="w"> </span>ipv4.addresses<span class="w"> </span><span class="m">192</span>.168.1.1/24
+</pre></div>
+</div>
+<p>Enable and test connection:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>nmcli<span class="w"> </span>con<span class="w"> </span>up<span class="w"> </span>plc-con
+ping<span class="w"> </span><span class="m">192</span>.168.1.10<span class="w"> </span><span class="o">(</span>address<span class="w"> </span>of<span class="w"> </span>controller<span class="o">)</span>
+ping<span class="w"> </span>github.com<span class="w"> </span><span class="o">(</span>Check<span class="w"> </span><span class="k">if</span><span class="w"> </span>internet<span class="w"> </span>works<span class="o">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="installation-setup-on-windows">
+<h2>Installation &amp; Setup on Windows<a class="headerlink" href="#installation-setup-on-windows" title="Link to this heading"></a></h2>
+<p>How to install all dependencies and tools necessary to work with plcnext. All the steps are tested on Windows 11.</p>
+<section id="install-plcnext-engineer">
+<h3>Install PLCNext Engineer<a class="headerlink" href="#install-plcnext-engineer" title="Link to this heading"></a></h3>
+<p>Download from <a class="reference external" href="https://www.phoenixcontact.com/en-us/products/programming-plcnext-engineer-1046008">here</a></p>
+</section>
+<section id="install-plcncli">
+<h3>Install plcncli<a class="headerlink" href="#install-plcncli" title="Link to this heading"></a></h3>
+<p>Download from <a class="reference external" href="https://www.phoenixcontact.com/en-us/products/software-package-plcnext-technology-toolchain-1639782">here</a></p>
+</section>
+<section id="install-sdk-for-axc-f-2152">
+<h3>Install sdk for AXC F 2152<a class="headerlink" href="#install-sdk-for-axc-f-2152" title="Link to this heading"></a></h3>
+<p>Download axcf2152 2025.0.3 sdk from <a class="reference external" href="https://www.phoenixcontact.com/en-us/products/controller-axc-f-2152-2404267">here</a> (Pick the right version and operating system under Software)</p>
+</section>
+<section id="install-and-setup-eclipse-when-working-on-cpp-projects">
+<h3>Install and setup Eclipse (when working on cpp projects)<a class="headerlink" href="#install-and-setup-eclipse-when-working-on-cpp-projects" title="Link to this heading"></a></h3>
+<p>Follow instructions from <a class="reference external" href="https://www.plcnext-community.net/infocenter/programming/cplusplus/cpp_required_installations">here</a> and <a class="reference external" href="https://www.plcnext-community.net/infocenter/programming/cplusplus/working_with_eclipse">here</a></p>
+</section>
+<section id="connect-axc-f-2125-on-windows">
+<h3>Connect AXC F 2125 on Windows<a class="headerlink" href="#connect-axc-f-2125-on-windows" title="Link to this heading"></a></h3>
+<p>Connecting to the controller via ethernet:</p>
+<ul class="simple">
+<li><p>https://www.realpars.com/blog/plcnext-engineer</p></li>
+<li><p>https://www.realpars.com/blog/phoenix-contact-plcnext</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../courses/hand_power_tools_basics.html" class="btn btn-neutral float-left" title="Hand and Power Tools Basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Carnegie Mellon University, Manufacturing Futures Institute.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

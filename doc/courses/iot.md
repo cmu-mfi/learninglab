@@ -104,4 +104,7 @@ Deploy a temperature and humidity monitor for critical infrastructure (e.g., a s
 #### Useful resources
 MQTTX Client Toolbox <https://mqttx.app/> <br>
 Adafruit Broker <https://io.adafruit.com> <br>
-Mosquitto Broker <http://test.mosquitto.org> 
+Mosquitto Broker <http://test.mosquitto.org> <br>
+<br>
+## Mini Version using ESP32 C3 _XIAO
+[ESP32 C3 XIAO IoT PCB](https://github.com/retrobuiltRyan/esp32c3_xiao_iot_pcb)
